@@ -640,14 +640,19 @@ header nav a{
     }
 
     #skill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 100vh; /* Asegurarse de que ocupe todo el alto de la pantalla */
-        padding: 20px;
-        overflow-y: auto;  /* Permitir desplazamiento vertical */
-        overflow-x: hidden; /* Evitar desplazamiento horizontal */
+        font-family: 'Poppins', sans-serif;
+        --color: #eee;
+        font-size: 14px;
+        color: #eee;
+        --x: 329px;
+        --y: 19px;
+        width: 100%;  /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+        max-width: 100%;
+        height: auto; /* Asegura que el contenedor tenga una altura adaptable */
+        padding-top: 0;  /* Elimina el espacio superior */
+        box-sizing: border-box;
+        margin: 0 auto; /* Elimina márgenes en los lados y centra */
+        position: relative;
     }
 
     #skill .list .item {
