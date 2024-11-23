@@ -641,6 +641,7 @@ header nav a{
     #skill .list .item {
         width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho disponible */
         padding: 10px;  /* Reducir el padding para que los elementos no se vean tan apretados */
+        margin: 0;
         background-color: transparent; /* Sin color de fondo */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Solo sombra */
         border-radius: 8px; /* Bordes redondeados */
