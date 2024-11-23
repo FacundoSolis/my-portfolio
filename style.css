@@ -631,11 +631,22 @@ header nav a{
     #skill .list {
         grid-template-columns: repeat(3, 1fr);  /* 3 columnas en pantallas móviles pequeñas */
         gap: 15px;  /* Ajustar el espacio entre los elementos */
+        justify-items: center; /* Centrar las cajas dentro de la grilla */
+
     }
 
     #skill .list .item {
-        width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho */
+        width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho disponible */
         padding: 10px;  /* Reducir el padding para que los elementos no se vean tan apretados */
+        background-color: unset; /* Sin color de fondo */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Solo sombra */
+        border-radius: 8px; /* Bordes redondeados */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    #skill .list .item:hover {
+        transform: translateY(-5px); /* Efecto al pasar el ratón */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
     }
 
     #skill .list .item i {
