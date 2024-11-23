@@ -630,31 +630,15 @@ header nav a{
 @media (max-width: 768px) {
     #skill .list {
         display: grid;
-        grid-template-columns: repeat(3,1fr); /* Ajuste dinámico de las columnas */
-        gap: 15px;  /* Espacio entre los elementos */
-        justify-items: center; /* Centra los elementos dentro de la grilla */
-        padding: 0;
-        margin: 0;  /* Asegura que la lista esté centrada */
-        width: 100%;  /* Asegura que la lista ocupe el 100% del ancho disponible */
-        max-width: 100%;
-        overflow-x: hidden;  /* Evitar desplazamiento horizontal */
+        grid-template-columns: repeat(3, 1fr);  /* Tres columnas también en móviles */
+        gap: 15px;  /* Espacio entre elementos */
+        justify-items: center; /* Centrar las cajas dentro de la grilla */
+        margin: 0 auto; /* Asegurar que la grilla esté centrada */
+        max-width: 100%; /* Asegurarse de que el ancho de la grilla sea el 100% */
+        overflow-x: hidden; /* Evitar desplazamiento horizontal */
     }
 
-    #skill {
-        font-family: 'Poppins', sans-serif;
-        --color: #eee;
-        font-size: 14px;
-        color: #eee;
-        --x: 329px;
-        --y: 19px;
-        width: 100%;  /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-        max-width: 100%;
-        height: auto; /* Asegura que el contenedor tenga una altura adaptable */
-        padding-top: 0;  /* Elimina el espacio superior */
-        box-sizing: border-box;
-        margin: 0 auto; /* Elimina márgenes en los lados y centra */
-        position: relative;
-    }
+    
 
     #skill .list .item {
         width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho disponible */
