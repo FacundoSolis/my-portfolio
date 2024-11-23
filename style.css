@@ -630,7 +630,7 @@ header nav a{
 @media (max-width: 768px) {
     #skill .list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste dinámico de las columnas */
+        grid-template-columns: repeat(3, 1fr); /* Ajuste dinámico de las columnas */
         gap: 15px;  /* Espacio entre los elementos */
         justify-items: center; /* Centra los elementos dentro de la grilla */
         margin: 0 auto;  /* Asegura que la lista esté centrada */
