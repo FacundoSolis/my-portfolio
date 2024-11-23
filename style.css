@@ -679,22 +679,83 @@ header nav a{
 }
 
 @media (max-width: 768px) {
+
+    /* Centrar todo en el medio */
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     #contact .form-container {
         display: flex;
         flex-direction: column;  /* Asegurar que los elementos del formulario se alineen verticalmente */
         align-items: center;
-        width: 100%;  /* Ajustar el ancho */
+        width: 90%;  /* Ajustar el ancho */
+        margin: 0 auto;
+    }
+
+     /* Ajustar el tamaño de "Thank you!" */
+     .thank-text-gradient {
+        font-size: 24px; /* Tamaño mayor para móviles */
+        margin-bottom: 15px; /* Espacio entre "Thank you!" y el siguiente contenido */
+        text-align: center; /* Centrado horizontal */
+        color: white;
+    }
+
+
+    #contact .container {
+        display: flex;
+        flex-direction: column; /* Alinear los elementos verticalmente */
+        justify-content: center; /* Centrar verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        min-height: 90vh; /* Asegura un espacio con márgenes arriba y abajo */
+        padding: 10px; /* Espaciado interno */
     }
 
     #contact .form-container input,
     #contact .form-container textarea {
-        width: 90%;  /* Ajustar el ancho de los campos de entrada */
+        width: 90%;  /* Asegurar que los campos de entrada ocupen todo el ancho disponible */
         margin-bottom: 10px;  /* Separar los campos */
+        font-size: 8px;  /* Ajustar el tamaño de la fuente */
+        padding: 10px;  /* Añadir padding para mayor comodidad */
+        border-radius: 5px;  /* Bordes redondeados */
+        border: 1px solid #ccc;  /* Añadir borde gris a los campos */
     }
 
     #contact .form-container button {
-        width: 100%;  /* Hacer el botón del formulario de ancho completo */
+        width: 9%;  /* Hacer el botón de ancho completo */
+        padding: 10px;  /* Añadir padding para que el botón sea más grande */
+        font-size: 12px;  /* Aumentar el tamaño de la fuente del botón */
+        border-radius: 5px;  /* Bordes redondeados para el botón */
+        background-color: #4CAF50;  /* Cambiar el color de fondo del botón */
+        color: #fff;  /* Color de texto blanco */
+        border: none;  /* Eliminar el borde */
     }
+    
+    .list .item i {
+        
+        font-size: 25px;
+        align-items: center;
+        gap:5px;
+    }
+    
+    .list {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .des {
+        color: white;
+    }
+
+
 }
 
 
