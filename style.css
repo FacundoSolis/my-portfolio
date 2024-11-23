@@ -567,27 +567,54 @@ header nav a{
 }
 @media screen and (max-width: 767px){
     body{
-        font-size: 10px;
+        font-size: 14px;
     }
     header nav a{
         margin: 10px;
     }
-    #intro .avatar img{
-        transform: none;
+    #intro .avatar img {
+        width: 70%;  /* Reducir el tamaño de la imagen */
+        bottom: 10%;  /* Ajustar la posición */
+        left: 15%;  /* Cambiar la posición para no quedar tan a la derecha */
+        transform: scale(0.7);  /* Reducir la escala para que no ocupe mucho espacio */
     }
     #intro .content{
-        left: 20px;
+        width: 90%;  /* Ajustar el tamaño del contenido */
+        left: 10px;
+        
     }
-    #intro .content .name{
-        font-size: 4em;
+    #intro .content .name,
+    #intro .content .job {
+        font-size: 3em;  /* Reducir el tamaño del texto */
+    }
+
+    #intro .content .des {
+        font-size: 14px;  /* Reducir el tamaño de la descripción */
+        width: 80%;  /* Ajustar el ancho para que no se desborde */
     }
     #intro .content i{
         position: unset;
     }
-    #skill .list{
-        padding: 0px;
-        grid-template-columns: repeat(2, 1fr);
+    #skill .list {
+        grid-template-columns: 1fr;  /* Hacer que las habilidades se apilen de forma vertical */
+        gap: 20px;  /* Ajustar el espacio entre los elementos */
     }
+
+    #skill .list .item {
+        width: 100%;  /* Asegurar que cada item ocupe el 100% del ancho */
+        padding: 15px;  /* Reducir el padding para que se ajuste mejor */
+    }
+
+    #skill .list .item i {
+        width: 100px;  /* Reducir el tamaño del icono */
+        height: 100px;  /* Reducir la altura del icono */
+        font-size: 3em;  /* Ajustar el tamaño del icono */
+    }
+
+    #skill .list .item .name {
+        font-size: 1.2em;  /* Reducir el tamaño de la fuente */
+    }
+
     #skill .list .item:nth-child(odd){
         background: unset;
     }
@@ -604,6 +631,26 @@ header nav a{
         height: 100px;
     }
 }
+
+@media (max-width: 768px) {
+    #contact .form-container {
+        display: flex;
+        flex-direction: column;  /* Asegurar que los elementos del formulario se alineen verticalmente */
+        align-items: center;
+        width: 100%;  /* Ajustar el ancho */
+    }
+
+    #contact .form-container input,
+    #contact .form-container textarea {
+        width: 90%;  /* Ajustar el ancho de los campos de entrada */
+        margin-bottom: 10px;  /* Separar los campos */
+    }
+
+    #contact .form-container button {
+        width: 100%;  /* Hacer el botón del formulario de ancho completo */
+    }
+}
+
 
 /* effect */
 .tab{
