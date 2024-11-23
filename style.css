@@ -398,11 +398,12 @@ header nav a{
     gap: 20px;
     width: 200px;
     flex-shrink: 0;
+    transition: transform 0.3s ease; /* Animación de movimiento */
 }
 #experience .list .item i{
     background-color: white;
     width: 50px;
-    color: white;
+    color: purple;
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -411,11 +412,11 @@ header nav a{
     transition: all 0.3s ease; /* Animación suave */
 }
 
-#experience .list .item:hover i {
+#experience .list .item i:hover {
     background-color: purple; /* Cambia el fondo */
-    color: purple; /* Cambia el color del icono */
+    color: white; /* Cambia el color del icono */
     transform: scale(1.2); /* Aumenta el tamaño */
-    box-shadow: 0 0 50px white; /* Añade un efecto de luz */
+    box-shadow: 0 0 30px white; /* Añade un efecto de luz */
 }
 
 #experience .list .item {
@@ -436,6 +437,11 @@ header nav a{
 }
 #experience .list .item .content .company{
     color: #E4454A;
+}
+
+#experience .list .item .content .des{
+    font-size: 0.8em;
+    opacity: 0.7;
 }
 
 #experience .list .item:nth-child(odd) .content{
