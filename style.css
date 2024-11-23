@@ -629,13 +629,13 @@ header nav a{
     /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     #skill .list {
-        grid-template-columns: 1fr;  /* Hacer que las habilidades se apilen de forma vertical */
+        grid-template-columns: repeat(3, 1fr);  /* 3 columnas en pantallas móviles pequeñas */
         gap: 15px;  /* Ajustar el espacio entre los elementos */
     }
 
     #skill .list .item {
-        width: 100%;
-        padding: 10px;  /* Reducir el padding para que se ajuste mejor */
+        width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho */
+        padding: 10px;  /* Reducir el padding para que los elementos no se vean tan apretados */
     }
 
     #skill .list .item i {
