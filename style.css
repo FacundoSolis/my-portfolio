@@ -638,7 +638,7 @@ header nav a{
     #skill .list .item {
         width: 100%;  /* Asegurarse de que cada item ocupe todo el ancho disponible */
         padding: 10px;  /* Reducir el padding para que los elementos no se vean tan apretados */
-        background-color: unset; /* Sin color de fondo */
+        background-color: transparent; /* Sin color de fondo */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Solo sombra */
         border-radius: 8px; /* Bordes redondeados */
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -665,7 +665,7 @@ header nav a{
 
     #skill .list .item:nth-child(2),
     #skill .list .item:nth-child(3n) {
-        background: #3F2525;
+        background: transparent;
     }
 }
     #project .list{
