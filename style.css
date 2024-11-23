@@ -573,11 +573,13 @@ header nav a{
         margin: 10px;
     }
     #intro .avatar img {
-        width: 70%;  /* Reducir el tamaño de la imagen */
-        bottom: 10%;  /* Ajustar la posición */
-        left: 15%;  /* Cambiar la posición para no quedar tan a la derecha */
-        transform: scale(0.7);  /* Reducir la escala para que no ocupe mucho espacio */
+        display: none;
     }
+
+    .fa-globe {
+        display: none;  /* Ocultar el globo */
+    }
+    
     #intro .content{
         width: 90%;  /* Ajustar el tamaño del contenido */
         left: 10px;
