@@ -573,13 +573,13 @@ header nav a{
         margin: 10px;
     }
     #intro .avatar img {
-        display: none;
+        display: none !important;
     }
 
     .fa-globe {
-        display: none;  /* Ocultar el globo */
+        display: none !important;  /* Ocultar el globo */
     }
-    
+
     #intro .content{
         width: 90%;  /* Ajustar el tamaño del contenido */
         left: 10px;
@@ -598,7 +598,8 @@ header nav a{
         position: unset;
     }
     #skill .list {
-        grid-template-columns: 1fr;  /* Hacer que las habilidades se apilen de forma vertical */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);  /* Hacer que las habilidades se apilen de forma vertical */
         gap: 20px;  /* Ajustar el espacio entre los elementos */
     }
 
@@ -624,6 +625,38 @@ header nav a{
     #skill .list .item:nth-child(3n){
         background: #3F2525;
     }
+
+    /* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    #skill .list {
+        grid-template-columns: 1fr;  /* Hacer que las habilidades se apilen de forma vertical */
+        gap: 15px;  /* Ajustar el espacio entre los elementos */
+    }
+
+    #skill .list .item {
+        width: 100%;
+        padding: 10px;  /* Reducir el padding para que se ajuste mejor */
+    }
+
+    #skill .list .item i {
+        width: 80px;  /* Reducir el tamaño del icono */
+        height: 80px;  /* Reducir la altura del icono */
+        font-size: 2.5em;  /* Ajustar el tamaño del icono */
+    }
+
+    #skill .list .item .name {
+        font-size: 1em;  /* Reducir el tamaño de la fuente */
+    }
+
+    #skill .list .item:nth-child(odd) {
+        background: unset;
+    }
+
+    #skill .list .item:nth-child(2),
+    #skill .list .item:nth-child(3n) {
+        background: #3F2525;
+    }
+}
     #project .list{
         padding: 10px;
         grid-template-columns: repeat(2, 1fr);
