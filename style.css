@@ -631,6 +631,8 @@ header nav a{
     #skill .list {
         grid-template-columns: repeat(3, 1fr);  /* 3 columnas en pantallas móviles pequeñas */
         gap: 15px;  /* Ajustar el espacio entre los elementos */
+        margin: 0 auto;
+        max-width: 100%;
         justify-items: center; /* Centrar las cajas dentro de la grilla */
 
     }
