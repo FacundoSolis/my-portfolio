@@ -762,19 +762,22 @@ header nav a{
 
     #contact .form-container {
         display: flex;
-        flex-direction: column;  /* Asegurar que los elementos del formulario se alineen verticalmente */
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 90%;  /* Ajustar el ancho */
-        margin: 0 auto;
-    }
+        min-height: 90vh;  /* Asegura que el contenedor ocupe al menos el 90% de la altura */
+        padding: 10px;
+        width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
+}
 
      /* Ajustar el tamaño de "Thank you!" */
      .thank-text-gradient {
-        font-size: 24px; /* Tamaño mayor para móviles */
-        margin-bottom: 15px; /* Espacio entre "Thank you!" y el siguiente contenido */
-        text-align: center; /* Centrado horizontal */
+        font-size: 24px;
+        margin-bottom: 15px;
         color: white;
         justify-content: center;
+        text-align: center;
+        width: 100%;
     }
 
 
@@ -789,13 +792,13 @@ header nav a{
 
     #contact .form-container input,
     #contact .form-container textarea {
-        width: 90%;  /* Asegurar que los campos de entrada ocupen todo el ancho disponible */
-        margin-bottom: 10px;  /* Separar los campos */
-        font-size: 8px;  /* Ajustar el tamaño de la fuente */
-        padding: 10px;  /* Añadir padding para mayor comodidad */
-        border-radius: 5px;  /* Bordes redondeados */
-        border: 1px solid #ccc;  /* Añadir borde gris a los campos */
-    }
+        width: 100%;  /* Asegura que los campos de entrada ocupen todo el ancho disponible */
+        margin-bottom: 15px;  /* Separar los campos */
+        font-size: 14px;  /* Tamaño de fuente ajustado */
+        padding: 12px;  /* Asegura que los campos tengan un buen espaciado */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+}
 
     #contact .form-container button {
         width: 9%;  /* Hacer el botón de ancho completo */
@@ -808,17 +811,18 @@ header nav a{
     }
     
     .list .item i {
-        
-        font-size: 25px;
+        display: flex;
+        font-size: 20px;
         align-items: center;
         justify-content: center;
-        gap:5px;
+        gap:3px;
     }
     
     .list {
         font-size: 10px;
         text-align: center;
         justify-content: center;
+        width: 100%;
     }
 
     .link {
