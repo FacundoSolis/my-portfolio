@@ -510,19 +510,23 @@ header nav a{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    text-align: center;
     margin-top: 20%;
 }
 
 #contact .thank-text-gradient{
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
     display: block;
+    text-align: center;
+    justify-content: center;
 }
 #contact .des{
     width: 500px;
-    font-size: 17px;
+    font-size: 15px;
     max-width: 80%;
     text-align: center;
+    justify-content: center;
 }
 #contact .list {
     text-align: center;
@@ -539,6 +543,7 @@ header nav a{
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     color: #fff;
     position: relative;
+    justify-content: center;
 }
 
 /* Efectos al Hover en los Iconos */
@@ -758,6 +763,7 @@ header nav a{
         margin-bottom: 15px; /* Espacio entre "Thank you!" y el siguiente contenido */
         text-align: center; /* Centrado horizontal */
         color: white;
+        justify-content: center;
     }
 
 
@@ -794,12 +800,14 @@ header nav a{
         
         font-size: 25px;
         align-items: center;
+        justify-content: center;
         gap:5px;
     }
     
     .list {
         font-size: 10px;
         text-align: center;
+        justify-content: center;
     }
 
     .link {
