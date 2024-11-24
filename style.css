@@ -723,9 +723,16 @@ header nav a{
         background: unset;
     }
 
+    #skill .list .item:nth-child(odd),
+    #skill .list .item:nth-child(even),
     #skill .list .item:nth-child(2),
-    #skill .list .item:nth-child(3n) {
-        background: transparent;
+    #skill .list .item:nth-child(3n),
+    #skill .list .item:nth-child(4),
+    #skill .list .item:nth-child(5),
+    #skill .list .item:nth-child(6),
+    #skill .list .item:nth-child(7),
+    #skill .list .item:nth-child(8) {
+        background-color: transparent !important;  /* El fondo será transparente para todas las cajas */
     }
 }
     #project .list{
@@ -747,7 +754,11 @@ header nav a{
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
+        width: 100%;  /* Asegura que el contenedor ocupe todo el ancho disponible */
+        padding: 0 10px;  /* Asegura que no haya márgenes en los lados */
+        box-sizing: border-box; /* Asegura que el padding no agregue margen extra */
+        margin: 0 auto;
+}
 
     #contact .form-container {
         display: flex;
