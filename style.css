@@ -110,10 +110,24 @@ header nav a{
     font-family: 'Righteous', sans-serif;
     line-height: 1em;
 }
+
+.text-gradient2 {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #f7b733); /* Gradiente de colores */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el fondo del texto transparente para mostrar el gradiente */
+    font-weight: bold; /* Opcional: añade negrita al texto */
+    transition: transform 0.3s ease, color 0.3s ease; /* Añade transición suave para efectos */
+}
+
+/* Efecto hover en la versión de escritorio */
+.text-gradient2:hover {
+    transform: scale(1.1); /* Agranda ligeramente el texto */
+    color: #f7b733; /* Cambia el color del texto cuando se pasa el ratón */
+}
 .button {
     position: relative;
-    width: 120px;
-    height: 40px;
+    width: 95px;
+    height: 15px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -173,6 +187,13 @@ header nav a{
     opacity: 0;
     animation: fadeInText 0.5s ease-in 1.5s forwards;
 }
+
+.sub p {
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+}
+
+
+
 
 @keyframes fadeInText {
     from {
@@ -433,14 +454,15 @@ header nav a{
     font-size: large;
 }
 #experience .list .item .content .job{
-    font-size: large;
+    font-size: 25px;
 }
 #experience .list .item .content .company{
     color: #E4454A;
+    font-size: 20px;
 }
 
 #experience .list .item .content .des{
-    font-size: 0.8em;
+    font-size: 15px;
     opacity: 0.7;
 }
 
@@ -604,9 +626,23 @@ header nav a{
         left: 10px;
         
     }
-    #intro .content .name,
+    #intro .content .name {
+        font-size: 50px;
+    }
     #intro .content .job {
-        font-size: 3em;  /* Reducir el tamaño del texto */
+        font-size: 2em;  /* Reducir el tamaño del texto */
+    }
+
+    .text-gradient2 {
+        background: linear-gradient(90deg, #ff7eb3, #ff758c, #f7b733);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: transform 0.3s ease, color 0.3s ease; /* Añade una transición suave */
+    }
+    
+    .text-gradient:hover {
+        transform: scale(1.1); /* Agranda el texto ligeramente */
+        color: #f7b733; /* Cambia el color del texto al pasar el ratón */
     }
 
     #intro .content .des {
