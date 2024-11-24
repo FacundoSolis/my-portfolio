@@ -783,6 +783,7 @@ header nav a{
 
     #contact .container {
         display: flex;
+        position: relative;
         flex-direction: column; /* Alinear los elementos verticalmente */
         justify-content: center; /* Centrar verticalmente */
         align-items: center; /* Centrar horizontalmente */
