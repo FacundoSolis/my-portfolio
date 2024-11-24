@@ -688,6 +688,17 @@ header nav a{
 
     /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+
+    #skill .container {
+        margin: 0 auto; /* Centra horizontalmente */
+        padding: 0 10px; /* Espacio interno lateral */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Centra verticalmente el contenido */
+        min-height: 100vh; /* Ocupa toda la pantalla */
+        box-sizing: border-box;
+    }
     #skill .list {
         grid-template-columns: repeat(3, 1fr);  /* 3 columnas en pantallas móviles pequeñas */
         gap: 15px;  /* Ajustar el espacio entre los elementos */
@@ -735,13 +746,50 @@ header nav a{
         background-color: transparent !important;  /* El fondo será transparente para todas las cajas */
     }
 }
-    #project .list{
-        padding: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+    #project .container {
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        max-width: 100%; /* No permite que el contenedor supere el 100% del ancho */
+        padding: 0 10px; /* Pequeño espacio interno lateral para evitar que el contenido toque los bordes */
+        margin: 0 auto; /* Centra el contenedor */
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+        overflow: hidden; /* Elimina posibles barras de scroll innecesarias */
+}
+    #project .list {
+        display: grid; /* Usa Grid para organizar las cajas */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para móviles */
+        gap: 20px; /* Espacio entre las cajas */
+        justify-content: center; /* Centra horizontalmente el contenido */
+        width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+        margin: 0; /* Elimina márgenes innecesarios */
+}
+
+    /* Ítems individuales dentro de la lista */
+    #project .list .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 80%; /* La imagen ocupa el ancho del ítem */
+        max-width: 160px; /* Limita el tamaño máximo en móvil */
+        height: auto; /* Mantiene las proporciones */
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+        object-fit: contain; /* Ajusta la imagen dentro del espacio sin cortarla */
     }
     #project .list .item img{
-        height: 100px;
+        width: 100%; /* Asegura que las imágenes ocupen el ancho disponible */
+        max-width: 140px; /* Ajusta el tamaño máximo para pantallas pequeñas */
+        height: auto; /* Mantiene las proporciones */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+        border-radius: 70%;
+    }
+
+    /* Ajustar el texto dentro de los ítems */
+    #project .list .item .name {
+        font-size: 12px; /* Ajusta el tamaño del texto */
+        margin-top: 0; /* Elimina márgenes superiores */
     }
 }
 
