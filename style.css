@@ -75,9 +75,9 @@ header nav a{
 /* Imagen del avatar con zoom suave */
 #intro .avatar img {
     position: absolute;
-    width: 55%;
+    width: auto;
     bottom: 30%;
-    height: 50%;
+    height: auto;
     left: 60%;
     transform: scale(0.8); /* Inicia con un tamaño menor */
     animation: avatarZoom 2s ease-in-out 0.5s forwards; /* Inicia después de un pequeño retraso */
@@ -488,15 +488,17 @@ header nav a{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-top: 20%;
 }
 
-#contact .thank{
-    font-size: 7em;
+#contact .thank-text-gradient{
+    font-size: 5em;
     font-weight: bold;
     display: block;
 }
 #contact .des{
     width: 500px;
+    font-size: 17px;
     max-width: 80%;
     text-align: center;
 }
@@ -511,7 +513,7 @@ header nav a{
 #contact .list .item {
     display: inline-block;
     margin: 10px 30px;
-    font-size: 2.5em;
+    font-size: 2em;
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     color: #fff;
     position: relative;
@@ -534,6 +536,23 @@ header nav a{
 #contact .list .item:hover i {
     color: #63e;
     transform: rotate(360deg);
+}
+
+/* Aplica el efecto al enlace "See My Intro" en la página Contact (versión escritorio) */
+#contact .des .text-gradient {
+    display: inline-block;
+    font-size: 16px; /* Tamaño ligeramente más grande para escritorio */
+    text-decoration: none; /* Sin subrayado */
+    color: white;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #f7b733); /* Gradiente inicial */
+    padding: 10px 20px; /* Más espacio para hacerlo más prominente */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: transform 0.3s ease, background 0.3s ease; /* Animación suave */
+}
+
+#contact .des .text-gradient:hover {
+    transform: scale(1.1); /* Agranda ligeramente en hover */
+    background: linear-gradient(90deg, #f7b733, #ff758c, #ff7eb3); /* Invierte los colores del gradiente */
 }
 
 /* Keyframes */
@@ -752,7 +771,24 @@ header nav a{
     }
 
     .des {
+        color: whitesmoke;
+    }
+
+    /* Efecto aplicado al enlace "See My Intro" */
+    #contact .des .text-gradient {
+        display: inline-block;
+        font-size: 14px; /* Tamaño ajustado */
+        text-decoration: none;
         color: white;
+        background: linear-gradient(90deg, #ff7eb3, #ff758c, #f7b733); /* Gradiente */
+        padding: 8px 16px; /* Espaciado interno similar al botón */
+        border-radius: 20px; /* Bordes redondeados */
+        transition: transform 0.3s ease, background 0.3s ease; /* Suaviza el efecto */
+    }
+
+    #contact .des .text-gradient:hover {
+        transform: scale(1.1); /* Agranda ligeramente */
+        background: linear-gradient(90deg, #f7b733, #ff758c, #ff7eb3); /* Invierte el gradiente */
     }
 
 
