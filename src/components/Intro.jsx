@@ -2,7 +2,7 @@ import "../scrollbar-intro.css";
 
 
 import { useEffect } from "react";
-import perfil from "../../images/perfil.png";
+const perfil = import.meta.env.BASE_URL + "images/perfil.png"; // ✅
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
@@ -14,7 +14,7 @@ function Intro() {
       <section className="modern-intro-section" style={{ width: '100vw', maxWidth: 'none', margin: 0, padding: 0, overflow: 'hidden' }}>
         {/* Imagen decorativa SVG de fondo */}
         <img
-          src="/hero.svg"
+  src={`${import.meta.env.BASE_URL}images/hero.svg`}
           alt="Hero background"
           className="intro-hero-bg"
           loading="lazy"
