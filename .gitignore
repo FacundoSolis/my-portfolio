@@ -1,0 +1,9 @@
+# Ignorar dependencias y archivos temporales
+node_modules/
+dist/
+.cache/
+.env
+.DS_Store
+*.log
+# Ignorar archivos de despliegue de gh-pages
+deply.log
