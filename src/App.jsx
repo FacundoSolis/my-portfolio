@@ -1,11 +1,10 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom'; // ⬅️ CAMBIADO
 import Navbar from "./components/Navbar";
 import AnimatedRoutes from './AnimatedRoutes';
 
 function App() {
   return (
     <>
-      {/* Fondo global con gradiente y grid moderno */}
       <div className="modern-bg-grid" />
       <Router>
         <Navbar />

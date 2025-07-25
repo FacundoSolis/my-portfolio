@@ -1,38 +1,40 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+const basePath = import.meta.env.BASE_URL;
 
 const projects = [
 	{
 		name: "Carla Serrano",
 		url: "https://carlaserranocarniceria.es/",
-		img: "images/carla-banner.png",
+		img: basePath + "images/carla-banner.png",
 		index: "#1",
 	},
 	{
 		name: "Enjoy Group",
 		url: "https://enjoygroup.es/elchiringuito/",
-		img: "images/enjoy-banner.png",
+		img: basePath + "images/enjoy-banner.png",
 		index: "#2",
 	},
 	{
 		name: "Iroko Restaurant",
 		url: "https://irokomallorca.com/es/",
-		img: "images/iroko-banner.png",
+		img: basePath + "images/iroko-banner.png",
 		index: "#3",
 	},
 	{
 		name: "Musicarte Restaurant",
 		url: "https://restaurantemusicarte.com/",
-		img: "images/musi-banner.png",
+		img: basePath + "images/musi-banner.png",
 		index: "#4",
 	},
 	{
 		name: "Koma Sushi",
 		url: "https://www.komasushi.es/",
-		img: "images/koma-sushi.png",
+		img: basePath + "images/koma-sushi.png",
 		index: "#5",
 	},
 ];
+
 
 function Projects() {
 	const navigate = useNavigate();
