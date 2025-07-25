@@ -1,3 +1,4 @@
+import "../scrollbar-intro.css";
 
 
 import { useEffect } from "react";
@@ -10,7 +11,7 @@ function Intro() {
 
   return (
     <>
-      <section className="modern-intro-section">
+      <section className="modern-intro-section" style={{ width: '100vw', maxWidth: 'none', margin: 0, padding: 0, overflow: 'hidden' }}>
         {/* Imagen decorativa SVG de fondo */}
         <img
           src="/hero.svg"
@@ -19,7 +20,7 @@ function Intro() {
           loading="lazy"
           style={{ color: 'transparent' }}
         />
-        <div className="modern-intro-grid">
+        <div className="modern-intro-grid" style={{ width: '100%', maxWidth: '1200px', margin: '0 auto', padding: 0, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch', gap: '4rem' }}>
           {/* Columna izquierda: texto y botones */}
           <div className="modern-intro-content">
             <h1 className="modern-intro-title">
