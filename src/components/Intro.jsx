@@ -10,7 +10,7 @@ function Intro() {
 
   return (
     <>
-      <section className="modern-intro-section" style={{ width: '100vw', maxWidth: 'none', margin: 0, padding: 0 }}>
+      <section className="modern-intro-section">
         {/* Imagen decorativa SVG de fondo */}
         <img
           src="/hero.svg"
@@ -50,7 +50,7 @@ function Intro() {
             </div>
           </div>
           {/* Columna derecha: bloque de código decorativo */}
-          <div className="modern-intro-code-window" style={{ flex: 1, minWidth: 0 }}>
+          <div className="modern-intro-code-window">
             <div className="code-window-bar">
               <span className="code-dot code-dot-red"></span>
               <span className="code-dot code-dot-orange"></span>
