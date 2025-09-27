@@ -29,12 +29,18 @@ function Skills() {
       <p className="skills-desc">These are the technologies and tools I use to build modern, scalable and creative web solutions.</p>
       <div className="skills-marquee-wrapper" style={{ width: '100vw', maxWidth: 'none', margin: 0, padding: 0 }}>
         <Marquee gradient={false} speed={60} pauseOnHover={true} direction="left">
-          {skillsData.map((skill, idx) => (
-            <div className="skill-item marquee-skill" key={idx}>
-              <i className={`fa-brands ${skill.icon}`} style={{ color: skill.color, fontSize: '2.5rem' }}></i>
-              <span>{skill.name}</span>
-            </div>
-          ))}
+          {skillsData.map((skill, idx) => {
+            // Si el skill es SQL, usa fa-solid en vez de fa-brands
+            const iconClass = skill.name === "SQL"
+              ? `fa-solid ${skill.icon}`
+              : `fa-brands ${skill.icon}`;
+            return (
+              <div className="skill-item marquee-skill" key={idx}>
+                <i className={iconClass} style={{ color: skill.color, fontSize: '2.5rem' }}></i>
+                <span>{skill.name}</span>
+              </div>
+            );
+          })}
         </Marquee>
       </div>
       <button className="back-btn" onClick={() => navigate(-1)}>

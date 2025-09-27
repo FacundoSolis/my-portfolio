@@ -16,25 +16,25 @@ function Navbar() {
       </button>
       <ul className={`navbar-links${open ? " open" : ""}`}>
         <li>
-          <button className="navbar-modern-btn" onClick={() => navigate('/skills')}>
+          <button className="navbar-modern-btn" onClick={() => { navigate('/skills'); setOpen(false); }}>
             <span className="navbar-btn-icon" role="img" aria-label="Skills">🛠️</span>
             <span>Skills</span>
           </button>
         </li>
         <li>
-          <button className="navbar-modern-btn" onClick={() => navigate('/projects')}>
+          <button className="navbar-modern-btn" onClick={() => { navigate('/projects'); setOpen(false); }}>
             <span className="navbar-btn-icon" role="img" aria-label="Projects">📁</span>
             <span>Projects</span>
           </button>
         </li>
         <li>
-          <button className="navbar-modern-btn" onClick={() => navigate('/experience')}>
+          <button className="navbar-modern-btn" onClick={() => { navigate('/experience'); setOpen(false); }}>
             <span className="navbar-btn-icon" role="img" aria-label="Experience">💼</span>
             <span>Experience</span>
           </button>
         </li>
         <li>
-          <button className="navbar-modern-btn" onClick={() => navigate('/contact')}>
+          <button className="navbar-modern-btn" onClick={() => { navigate('/contact'); setOpen(false); }}>
             <span className="navbar-btn-icon" role="img" aria-label="Contact">✉️</span>
             <span>Contact</span>
           </button>

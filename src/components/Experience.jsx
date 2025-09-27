@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "../experience.css";
 
 const experienceList = [
 	{
@@ -72,26 +73,26 @@ function Experience() {
 			>
 			  {exp.time}
 			</div>
-			<i className={exp.icon}></i>
+				<i className={exp.icon} style={{ marginBottom: '0.5rem', marginLeft: '0.5rem' }}></i>
 			<div className="experience-content">
-			  <div
-				className="experience-job"
-				style={{ whiteSpace: "pre-line" }}
-			  >
-				{exp.job}
-			  </div>
-			  <div
-				className="experience-company"
-				style={{ whiteSpace: "pre-line" }}
-			  >
-				{exp.company}
-			  </div>
-			  <div
-				className="experience-des"
-				style={{ whiteSpace: "pre-line" }}
-			  >
-				{exp.des}
-			  </div>
+				<div
+					className="experience-job"
+					style={{ whiteSpace: "pre-line", marginBottom: '0.5rem', marginLeft: '0.5rem' }}
+				>
+					{exp.job}
+				</div>
+				<div
+					className="experience-company"
+					style={{ whiteSpace: "pre-line", marginBottom: '0.5rem', marginLeft: '0.5rem' }}
+				>
+					{exp.company}
+				</div>
+				<div
+					className="experience-des"
+					style={{ whiteSpace: "pre-line", marginBottom: '0.5rem', marginLeft: '0.5rem' }}
+				>
+					{exp.des}
+				</div>
 			</div>
 		  </div>
 		))}
