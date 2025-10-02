@@ -1324,6 +1324,7 @@ section {
 
 @media (max-width: 900px) {
   .navbar-logo-wrapper {
+    position: absolute;
     top: 1rem;
     left: 1rem;
   }

@@ -221,7 +221,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 0rem;
     width: 100%;
     max-width: 100%;
     padding: 0;
@@ -235,7 +235,7 @@
   }
 
   .modern-contact-form-box {
-    width: 100%;
+    width: 85%;
     max-width: 100%;
     margin: 0 auto;
   }

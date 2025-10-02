@@ -144,7 +144,7 @@
 @media (max-width: 768px) {
   .projects-title {
     font-size: 2rem;
-    margin-top: 12rem;
+    margin-top: 0rem;
   }
 
   .project-img-wrapper img {
@@ -170,12 +170,12 @@
     justify-items: center;
     gap: 1.5rem;
     padding: 0;
-    width: 100%;
+    width: 100% !important;
     max-width: 100%;
   }
 
   .project-card {
-    width: 95%;
+    width: 90%;
     max-width: 100%;
     margin: 0 auto;
   }
