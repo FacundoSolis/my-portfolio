@@ -3,6 +3,10 @@
   padding: 4rem 2rem;
   color: #fff;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .projects-title {
@@ -22,6 +26,9 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
 
 /* ---------- CARD ---------- */
@@ -137,13 +144,22 @@
 
 /* Móvil */
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 4rem 0.5rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
-    justify-items: center; /* 🔥 centra los elementos en el grid */
+    justify-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .project-card {
-    width: 90%;        /* 🔥 ocupa el 90% del ancho disponible */
-    max-width: 360px;  /* 🔥 no más ancho que 360px */
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
