@@ -155,10 +155,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   background: none;
 }
 .intro-hero-bg {
+  display: none; /* Oculta la imagen de fondo que causa problemas en móvil */
   position: absolute;
   top: -98px;
   left: 0;
@@ -508,11 +510,13 @@ body {
   justify-content: center;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   max-width: 100vw;
 }
 html {
   overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   max-width: 100vw;
 }
@@ -579,7 +583,8 @@ section {
   justify-content: center;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 .skills-section::before,
 .skills-section::after {
@@ -1372,13 +1377,19 @@ section {
   @media (max-width: 900px) {
     html, body, #root, .modern-intro-section, .modern-intro-grid, .modern-navbar, .projects-grid {
       overflow-x: hidden !important;
+      overflow-y: visible !important;
       max-width: 100vw !important;
       min-width: 0 !important;
       box-sizing: border-box;
     }
     html, body {
       overflow-x: hidden !important;
+      overflow-y: auto !important;
       max-width: 100vw;
+    }
+    #root {
+      min-height: 100vh;
+      width: 100%;
     }
     .modern-navbar {
       position: fixed;

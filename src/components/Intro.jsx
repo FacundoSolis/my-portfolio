@@ -14,10 +14,9 @@ function Intro() {
           maxWidth: "none",
           margin: 0,
           padding: 0,
-          overflow: "hidden",
         }}
       >
-        {/* Imagen decorativa SVG de fondo */}
+        {/* Imagen decorativa SVG de fondo - comentada temporalmente
         <img
           src={`${import.meta.env.BASE_URL}images/hero.svg`}
           alt="Hero background"
@@ -25,6 +24,7 @@ function Intro() {
           loading="lazy"
           style={{ color: "transparent" }}
         />
+        */}
 
         <div className="modern-intro-grid responsive-intro-grid">
           {/* Texto y redes */}
