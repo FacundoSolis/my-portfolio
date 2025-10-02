@@ -36,6 +36,12 @@ const projects = [
     img: basePath + "images/koma-sushi.png",
     index: "#5",
   },
+  {
+    name: "Can Gavella",
+    url: "https://www.cangavella.com/",
+    img: basePath + "images/cangavella.jpg",
+    index: "#6",
+  },
 ];
 
 function Projects() {

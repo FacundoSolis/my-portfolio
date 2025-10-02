@@ -6,14 +6,17 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="modern-navbar">
-      <div className="navbar-logo" onClick={() => navigate("/")}>FACUNDO SOLIS</div>
-      <div style={{ flex: 1 }}></div>
-      <button className="navbar-hamburger" onClick={() => setOpen(!open)} aria-label="Abrir menú">
-        <span className="hamburger-bar"></span>
-        <span className="hamburger-bar"></span>
-        <span className="hamburger-bar"></span>
-      </button>
+    <>
+      <div className="navbar-logo-wrapper" onClick={() => navigate("/")}>
+        <img src="/my-portfolio/LogoFacundo(sinfondo).png" alt="Facundo Solis Logo" className="navbar-logo-img" />
+      </div>
+      <nav className="modern-navbar">
+        <div style={{ flex: 1 }}></div>
+        <button className="navbar-hamburger" onClick={() => setOpen(!open)} aria-label="Abrir menú">
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+        </button>
       <ul className={`navbar-links${open ? " open" : ""}`}>
         <li>
           <button className="navbar-modern-btn" onClick={() => { navigate('/skills'); setOpen(false); }}>
@@ -41,6 +44,7 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+    </>
   );
 }
 

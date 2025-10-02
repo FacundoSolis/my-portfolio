@@ -118,7 +118,7 @@ function Intro() {
                     <span className="code-string">'Facundo Solis'</span>,<br />
                     &nbsp;&nbsp;
                     <span className="code-prop">title</span>:{" "}
-                    <span className="code-string">'Senior Full Stack Developer'</span>,<br />
+                    <span className="code-string">'Mid Full Stack Developer'</span>,<br />
                     &nbsp;&nbsp;
                     <span className="code-prop">skills</span>: [<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">'JavaScript'</span>,{" "}

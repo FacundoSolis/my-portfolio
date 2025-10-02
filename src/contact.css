@@ -213,6 +213,7 @@
     flex-direction: column;
     align-items: center;  /* 🔥 centra los dos bloques */
     gap: 2rem;
+    margin-top: 4rem;
   }
 
   .modern-contact-form-col {

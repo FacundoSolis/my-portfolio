@@ -120,6 +120,7 @@
 @media (max-width: 768px) {
   .projects-title {
     font-size: 2rem;
+    margin-top: 12rem;
   }
 
   .project-img-wrapper img {

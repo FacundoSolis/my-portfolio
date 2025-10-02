@@ -1296,6 +1296,43 @@ section {
   100% { transform: rotate(0deg); }
 }
 
+.navbar-logo-wrapper {
+  position: fixed;
+  top: 0.5rem;
+  left: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-logo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.navbar-logo-img {
+  height: 130px;
+  width: 130px;
+  filter: drop-shadow(0 4px 12px rgba(22,242,179,0.3));
+  transition: filter 0.3s;
+}
+
+.navbar-logo-wrapper:hover .navbar-logo-img {
+  filter: drop-shadow(0 6px 16px rgba(22,242,179,0.5));
+}
+
+@media (max-width: 900px) {
+  .navbar-logo-wrapper {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .navbar-logo-img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+  }
+}
+
 .modern-navbar {
   display: flex;
   align-items: center;
@@ -1305,8 +1342,8 @@ section {
   box-shadow: 0 4px 24px rgba(22,242,179,0.08);
   border-radius: 2.2rem;
   margin: 2.2rem auto 2.5rem auto;
-  max-width: 900px;
-  width: 98vw;
+  max-width: 600px;
+  width: 85vw;
   position: relative;
   z-index: 20;
 }
@@ -1333,14 +1370,18 @@ section {
       max-width: 100vw;
     }
     .modern-navbar {
-      position: relative;
-      justify-content: flex-start;
-      padding-left: 1.2rem;
-      padding-right: 1.2rem;
-      width: 100vw;
-      max-width: 100vw;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      justify-content: flex-end;
+      padding: 0;
+      width: auto;
+      max-width: none;
       min-width: 0;
-      box-sizing: border-box;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
     }
     .navbar-logo {
       margin: 0;
@@ -1359,7 +1400,11 @@ section {
       white-space: nowrap;
     }
     .navbar-hamburger {
-      margin-left: auto;
+      margin-left: 0;
+      background: linear-gradient(90deg, #23243a 60%, #18181b 100%);
+      padding: 0.8rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(22,242,179,0.08);
     }
     .modern-intro-section, .modern-intro-grid {
       width: 100vw !important;

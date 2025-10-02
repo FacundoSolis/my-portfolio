@@ -90,6 +90,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .experience-section {
+    margin-top: 8rem !important;
+  }
   .experience-list {
     padding-left: 1.5rem;
   }
