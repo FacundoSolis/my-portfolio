@@ -51,6 +51,9 @@ function Projects() {
     window.scrollTo(0, 0);
   }, []);
 
+  // Detectar si es móvil o tablet
+  const isMobileOrTablet = window.innerWidth <= 1024;
+
   return (
     <section className="projects-section">
       <motion.h2
@@ -73,7 +76,7 @@ function Projects() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={isMobileOrTablet ? {} : { scale: 1.05 }}
           >
             <div className="project-img-wrapper">
               <img src={project.img} alt={project.name} />

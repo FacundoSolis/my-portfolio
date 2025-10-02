@@ -10,7 +10,7 @@ function Intro() {
       <section
         className="modern-intro-section"
         style={{
-          width: "100vw",
+          width: "100%",
           maxWidth: "none",
           margin: 0,
           padding: 0,
